@@ -17,6 +17,8 @@ Here be dragons...
 	> To Perl or not to Perl...
 
 ##Getting started with a new relay
+
+### Build with normal procedure
 * Prepare a folder to work with the scripts and such
 	> mkdir scripts && cd scripts
 
@@ -40,3 +42,8 @@ If you don't pass any argument, the script will choose some for you. Note that t
 * Boot up your Raspberry Pi 2, let it go through the initial setup. The RPi will download and install all necessary packages and then reboot itself (this normally takes about 10-15 minutes).
 * After the automatic reboot, Tor will be started.
 * Remember to setup port forwarding (TCP 9001) on your router/firewall if the RPi is located on a NAT:ed private LAN
+
+### Build using a docker image
+This procedure is tested on Fedora 25.
+  > cd docker
+  > ./runme.sh 
